@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Roboto&display=swap');
+
+:root {
+    font-family: 'Roboto', sans-serif;
+    --main-color: black;
+    --accent-color: white;
+    color: var(--main-color);
+    scroll-behavior: smooth;
+}
+
+body {
+    max-width: 1100px;
+    margin: auto;
+}
+
+header nav h1 {
+    font-family: 'Righteous', cursive;
+    font-size: 2rem;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+header nav .search {
+    height: 20px;
+    width: 20px;
+}
+
+header nav .top-menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+}
+
+header nav .top-menu li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--main-color);
+    padding: 5px;
+    border: 1px solid transparent;
+}
+
+header nav .top-menu li a:hover {
+    border: 1px solid var(--main-color);
+    
+}
+
+@media (min-width: 600px) {
+
+    header nav {
+        display: flex;
+    }
+
+    .top-menu {
+        flex: 1;
+    }
+}
+
+header .banner {
+    background-image: url(../img/zerowaste_header.png);
+    background-position: top;
+    background-size: cover;
+    min-height: 400px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+
+}
+
+@media (min-width: 800px) {
+
+    header .banner {
+         background-size: contain;
+         background-repeat: no-repeat;
+    }
+}
+
+header .banner a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: brown;
+    padding: 5px;
+    border: 1px solid transparent;
+    text-emphasis: initial;
+
+}
+
+header nav .top-menu li a:hover {
+    border: 1px solid var(--main-color);
+}
